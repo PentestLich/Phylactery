@@ -1,3 +1,3 @@
 #!/bin/bash
 target=$1
-nmap -sC -sV -oN "${target}-scan-results.txt" "$target"
+nmap -T4 -p- -oN "${target}-scan-results.txt" "$target"
